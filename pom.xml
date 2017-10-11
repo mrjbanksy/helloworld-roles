@@ -6,6 +6,32 @@
   <version>1.0</version>
   <name>session-replication</name>
 
+<repositories>
+        <repository>
+            <id>jboss-enterprise-maven-repository</id>
+            <url>https://maven.repository.redhat.com/ga/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jboss-enterprise-maven-repository</id>
+            <url>https://maven.repository.redhat.com/ga/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <version.wildfly.maven.plugin>1.0.2.Final</version.wildfly.maven.plugin>
