@@ -1,7 +1,13 @@
-Session Replication
-===================
-OpenShift supports scalable applications. Scaling enables your application to react to changes in HTTP traffic and automatically allocate the necessary resources to handle the current demand. The OpenShift Enterprise infrastructure monitors incoming web traffic and automatically adds an additional gear of your web cartridge online to handle requests. 
+Helloworld Example
+==================
 
-For scaled applications, the JBoss App Server cartridge leverages the clustering support already available in the JBoss App Server. As a result, when your application uses web session data, the JBoss App Server cartridge will automatically replicate the data. As a developer, you simply configure your web application to use the distributable tag.
+This example demonstrates the use of *CDI 1.0* and *Servlet 3* in JBoss AS 7.
 
-This repo contains sample files for testing session replication. 
+The example can be deployed using Maven from the command line or from Eclipse using
+JBoss Tools.
+
+To set up Maven or JBoss Tools in Eclipse, refer to the _Getting Started Guide_.
+
+To deploy to JBoss AS 7, start JBoss AS 7 and type `mvn package jboss-as:deploy`.
+The application is deployed to <http://localhost:8080/jboss-as-helloworld>. You
+can read more details in the _Getting Started Guide_.
